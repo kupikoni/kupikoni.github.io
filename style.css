@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro';
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    margin: 0 0 1em 0;
+    border-bottom: 1px solid black;
+    padding: 0 0 2em 0;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-elem {
+    block-size: min-content;
+    text-align: center;
+    padding: 1em 2em;
+    border: 2px solid black;
+    border-radius: 50em;
+    box-shadow: 0px 5px 1em rgba(0,0,0,0.33);
+}
+
+.site {
+    margin-bottom: 0.5em;
+    font-size: 24pt;
+    font-style: italic;
+    text-align: center;
+}
+
+.home { background-color: #FF6759; }
+.about { background-color: #FFE228; }
+.work { background-color: #7FFF7F; }
+.blog { background-color: #00E5FF; }
+.dni { background-color: #FF77E3; }
+
+.headmate {
+    display: flex;
+    align-items: center;
+    padding: 0 3em 0 0;
+    margin: 2em 0em;
+
+    border-radius: 100em;
+    gap: 1.5em;
+    background: #EFEFEF;
+}
+
+.pfp {
+    clip-path: url(#squircle);
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 10px 1em rgba(0,0,0,0.33);
+}
