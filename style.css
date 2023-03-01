@@ -22,7 +22,7 @@ nav {
 }
 
 .nav-elem {
-    block-size: min-content;
+    flex: 1 0;
     text-align: center;
     padding: 1em 2em;
     border: 2px solid black;
