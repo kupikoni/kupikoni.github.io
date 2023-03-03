@@ -23,6 +23,9 @@ nav {
 
 .nav-elem {
     flex: 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 1em 2em;
     border: 2px solid black;
@@ -45,18 +48,42 @@ nav {
 
 .headmate {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 3em 0 0;
-    margin: 2em 0em;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 3em;
 
-    border-radius: 100em;
-    gap: 1.5em;
     background: #EFEFEF;
 }
 
+.headmate p {
+    margin: 1em 0 0em 0;
+}
+
 .pfp {
-    clip-path: url(#squircle);
     border: 2px solid black;
     border-radius: 50%;
     box-shadow: 0px 10px 1em rgba(0,0,0,0.33);
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.profile:hover { background: rgba(255,255,255); }
+.pfp:hover { opacity: 0.5; transition: ease-in 0.1s; }
+
+@media screen and (min-width: 768px) {
+    .headmate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 3em 0 0;
+        margin: 2em 0em;
+    
+        border-radius: 100em;
+        gap: 1.5em;
+        background: #EFEFEF;
+    }
 }
