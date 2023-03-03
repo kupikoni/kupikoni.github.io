@@ -86,4 +86,8 @@ nav {
         gap: 1.5em;
         background: #EFEFEF;
     }
+
+    .headmate p {
+        margin: 1em 0;
+    }
 }
